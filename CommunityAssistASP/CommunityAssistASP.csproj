@@ -46,6 +46,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
@@ -148,15 +154,56 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\BusinessRule.cs">
+      <DependentUpon>CommAssistDBModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\CommAssistDBModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>CommAssistDBModel.Context.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\CommAssistDBModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CommAssistDBModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\CommAssistDBModel.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>CommAssistDBModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Donation.cs">
+      <DependentUpon>CommAssistDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Employee.cs">
+      <DependentUpon>CommAssistDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\EmployeePosition.cs">
+      <DependentUpon>CommAssistDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GrantApplication.cs">
+      <DependentUpon>CommAssistDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GrantApplicationReview.cs">
+      <DependentUpon>CommAssistDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GrantApplicationStatu.cs">
+      <DependentUpon>CommAssistDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GrantType.cs">
+      <DependentUpon>CommAssistDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\LoginHistory.cs">
+      <DependentUpon>CommAssistDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Person.cs">
+      <DependentUpon>CommAssistDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PersonAddress.cs">
+      <DependentUpon>CommAssistDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Position.cs">
+      <DependentUpon>CommAssistDBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -169,7 +216,13 @@
     <Content Include="Content\Site.css" />
     <Content Include="Models\CommAssistDBModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>CommAssistDBModel.edmx</DependentUpon>
       <LastGenOutput>CommAssistDBModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\CommAssistDBModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>CommAssistDBModel.edmx</DependentUpon>
+      <LastGenOutput>CommAssistDBModel.cs</LastGenOutput>
     </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
