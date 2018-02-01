@@ -17,10 +17,6 @@ namespace CommunityAssistASP.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Person()
         {
-            this.Donations = new HashSet<Donation>();
-            this.Employees = new HashSet<Employee>();
-            this.GrantApplications = new HashSet<GrantApplication>();
-            this.LoginHistories = new HashSet<LoginHistory>();
             this.PersonAddresses = new HashSet<PersonAddress>();
         }
     
@@ -33,14 +29,6 @@ namespace CommunityAssistASP.Models
         public Nullable<int> PersonPassSeed { get; set; }
         public Nullable<System.DateTime> PersonDateAdded { get; set; }
     
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Donation> Donations { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Employee> Employees { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<GrantApplication> GrantApplications { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<LoginHistory> LoginHistories { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<PersonAddress> PersonAddresses { get; set; }
     }

@@ -15,10 +15,10 @@ namespace CommunityAssistASP.Models
     using System.Data.Entity.Core.Objects;
     using System.Linq;
     
-    public partial class CommunityAssist2017Entities1 : DbContext
+    public partial class CommunityAssist2017Entities2 : DbContext
     {
-        public CommunityAssist2017Entities1()
-            : base("name=CommunityAssist2017Entities1")
+        public CommunityAssist2017Entities2()
+            : base("name=CommunityAssist2017Entities2")
         {
         }
     

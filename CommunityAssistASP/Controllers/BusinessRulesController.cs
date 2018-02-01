@@ -13,7 +13,7 @@ namespace CommunityAssistASP.Controllers
 {
     public class BusinessRulesController : Controller
     {
-        private CommunityAssist2017Entities1 db = new CommunityAssist2017Entities1();
+        private CommunityAssist2017Entities2 db = new CommunityAssist2017Entities2();
 
         // GET: BusinessRules
         public async Task<ActionResult> Index()

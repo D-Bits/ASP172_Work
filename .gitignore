@@ -259,3 +259,12 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+/CommunityAssistASP/Controllers/RegistrationController.cs
+/CommunityAssistASP/Models/Message.cs
+/CommunityAssistASP/Models/NewPersonModel.Context.cs
+/CommunityAssistASP/Models/NewPersonModel.Context.tt
+/CommunityAssistASP/Models/NewPersonModel.cs
+/CommunityAssistASP/Models/NewPersonModel.Designer.cs
+/CommunityAssistASP/Models/NewPersonModel.edmx
+/CommunityAssistASP/Models/NewPersonModel.edmx.diagram
+/CommunityAssistASP/Models/NewPersonModel.tt

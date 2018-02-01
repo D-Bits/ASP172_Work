@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'C:\Users\Dana\OneDrive - Seattle Colleges\ITC 172 ASP\Homework\CommunityAssistASP\Models\CommAssistDBModel.edmx'. 
+﻿// T4 code generation is enabled for model 'C:\Users\Wtr18\OneDrive - Seattle Colleges\ITC 172 ASP\Homework\CommunityAssistASP\Models\CommAssistDBModel.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.

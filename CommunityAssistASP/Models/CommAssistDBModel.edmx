@@ -606,7 +606,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="CommunityAssist2017Entities1" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="CommunityAssist2017Entities2" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="BusinessRules" EntityType="Self.BusinessRule" />
           <EntitySet Name="Donations" EntityType="Self.Donation" />
           <EntitySet Name="Employees" EntityType="Self.Employee" />
@@ -685,7 +685,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="CommunityAssist2017ModelStoreContainer" CdmEntityContainer="CommunityAssist2017Entities1">
+        <EntityContainerMapping StorageEntityContainer="CommunityAssist2017ModelStoreContainer" CdmEntityContainer="CommunityAssist2017Entities2">
           <EntitySetMapping Name="BusinessRules">
             <EntityTypeMapping TypeName="CommunityAssist2017Model.BusinessRule">
               <MappingFragment StoreEntitySet="BusinessRule">
