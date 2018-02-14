@@ -199,26 +199,12 @@
       <DependentUpon>CommAssistDBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Message.cs" />
-    <Compile Include="Models\NewPersonModel.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>NewPersonModel.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\NewPersonModel.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>NewPersonModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\NewPersonModel.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>NewPersonModel.edmx</DependentUpon>
-    </Compile>
+    <Compile Include="Models\NewPerson.cs" />
     <Compile Include="Models\Person.cs">
-      <DependentUpon>NewPersonModel.tt</DependentUpon>
+      <DependentUpon>CommAssistDBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\PersonAddress.cs">
-      <DependentUpon>NewPersonModel.tt</DependentUpon>
+      <DependentUpon>CommAssistDBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Position.cs">
       <DependentUpon>CommAssistDBModel.tt</DependentUpon>
@@ -242,16 +228,6 @@
       <DependentUpon>CommAssistDBModel.edmx</DependentUpon>
       <LastGenOutput>CommAssistDBModel.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\NewPersonModel.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>NewPersonModel.edmx</DependentUpon>
-      <LastGenOutput>NewPersonModel.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="Models\NewPersonModel.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>NewPersonModel.edmx</DependentUpon>
-      <LastGenOutput>NewPersonModel.cs</LastGenOutput>
-    </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
@@ -263,13 +239,6 @@
     </EntityDeploy>
     <Content Include="Models\CommAssistDBModel.edmx.diagram">
       <DependentUpon>CommAssistDBModel.edmx</DependentUpon>
-    </Content>
-    <EntityDeploy Include="Models\NewPersonModel.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>NewPersonModel.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Models\NewPersonModel.edmx.diagram">
-      <DependentUpon>NewPersonModel.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
@@ -306,10 +275,11 @@
     <Content Include="Views\BusinessRules\Details.cshtml" />
     <Content Include="Views\BusinessRules\Edit.cshtml" />
     <Content Include="Views\BusinessRules\Index.cshtml" />
+    <Content Include="Views\Registration\Registration.cshtml" />
+    <Content Include="Views\Registration\Result.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Registration\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
